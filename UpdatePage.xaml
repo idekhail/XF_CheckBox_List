@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestCheckBox.UpdatePage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Update Page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="Id"  Text="Id"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry x:Name="Name"  Placeholder="Name"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="SComp" FontSize="Title" Padding="30,10,30,10"/>
+            <CheckBox x:Name="SComp1" CheckedChanged="SComp1_CheckedChanged" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="MComp" FontSize="Title" Padding="30,10,30,10"/>
+            <CheckBox x:Name="MComp1" CheckedChanged="MComp1_CheckedChanged" />
+        </StackLayout>
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="LComp" FontSize="Title" Padding="30,10,30,10"/>
+            <CheckBox x:Name="LComp1" CheckedChanged="LComp1_CheckedChanged" />
+        </StackLayout>
+        
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Online" FontSize="Title" Padding="30,10,30,10"/>
+            <Switch x:Name="Online1" OnColor="Orange" ThumbColor="Green"/>
+        </StackLayout>
+        
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+            <Picker ItemDisplayBinding="{Binding CountryName}" x:Name="MyCountry" Title="Select County" ItemsSource="{Binding CountyList}"  />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="Get" Text="Get" Clicked="Get_Clicked" />
+            <Button x:Name="Update" Text="Update" Clicked="Update_Clicked" />
+            <Button x:Name="Back" Text="Back" />
+            <Button x:Name="Delete" Text="Delete" Clicked="Delete_Clicked" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

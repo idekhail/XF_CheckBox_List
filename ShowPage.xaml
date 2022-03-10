@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestCheckBox.ShowPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Show Page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label x:Name="Id"  Text="Id"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Entry x:Name="Name"  Placeholder="Name"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label Text="CompSize" x:Name="CompSize1" FontSize="Title" Padding="30,10,30,10"/>
+        </StackLayout>
+
+        <StackLayout  Orientation="Vertical" HorizontalOptions="Center">
+            <Label Text="Online" x:Name="Online1" FontSize="Title" Padding="30,10,30,10"/>
+        </StackLayout>
+        
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Label Text="Country" x:Name="Country1" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="City" x:Name="City1" FontSize="Title" Padding="30,10,30,10"/>
+
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="Show" Text="Show" Clicked="Show_Clicked" />
+            <Button x:Name="Close" Text="Close" />
+            <Button x:Name="Home" Text="Home" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
